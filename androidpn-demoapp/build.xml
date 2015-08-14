@@ -1,0 +1,53 @@
+<project name="build-androidpn-demoapp" default="build" basedir=".">
+
+	<property file="./build.properties" />
+
+	<!-- Global properties -->
+	<property name="src.dir" value="src" />
+	<property name="lib.dir" value="lib" />
+	<property name="res.dir" value="res" />
+	<property name="assets.dir" value="assets" />
+	<property name="target.dir" value="target" />
+	<property name="target.classes.dir" value="target/classes" />
+
+	<!-- Classpath declaration -->
+	<path id="project.classpath">
+		<pathelement path="${target.classes.dir}" />
+		<pathelement path="${android.sdk.jar}" />
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+			<include name="**/*.zip" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${target.dir}" />
+	</target>
+
+	<target name="build" depends="clean">
+		<!--
+		<mkdir dir="${target.classes.dir}" />
+		<zip destfile="${target.dir}/${project.name}-${project.version}.zip">
+			<fileset dir="${basedir}" excludes="bin/**,doc/**,gen/**,target/**,temp/**,build.*" />
+		</zip>
+		-->
+		<mkdir dir="${target.dir}/${project.name}-${project.version}" />
+		<copy todir="${target.dir}/${project.name}-${project.version}">
+			<fileset dir="${basedir}">
+				<patternset>
+					<exclude name="bin/**" />
+					<exclude name="doc/**" />
+					<exclude name="gen/**" />
+					<exclude name="target/**" />
+					<exclude name="temp/**" />
+					<exclude name="build.*" />
+				</patternset>
+			</fileset>
+		</copy>
+		<zip destfile="${target.dir}/${project.name}-${project.version}.zip">
+			<fileset dir="${target.dir}" includes="${project.name}-${project.version}/**" />
+		</zip>
+		<delete dir="${target.dir}/${project.name}-${project.version}" />		
+	</target>
+
+</project>

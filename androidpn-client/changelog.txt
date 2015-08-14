@@ -1,0 +1,101 @@
+ANDROIDPN-CLIENT CHANGELOG
+==========================
+http://androidpn.sourceforge.net/
+
+Changes in version 0.5.0 (2010-11-11)
+-------------------------------------
+* Set security mode enabled
+
+Changes in version 0.4.5 (2010-10-14)
+-------------------------------------
+* Removed InvalidFormatException
+* Updated the build files
+
+Changes in version 0.4.4 (2010-10-11)
+-------------------------------------
+* Added ANT build.xml
+* Renamed client.properties to androidpn.properties
+* Updated ServiceManager
+* Updated NotificationDetailsActivity
+* Updated Notifier
+
+Changes in version 0.4.3 (2010-10-10)
+-------------------------------------
+* Updated NotificationSettingsActivity
+* Updated Notifier
+* Updated ServiceManager
+* Updated XmppManager
+
+Changes in version 0.4.2 (2010-10-07)
+-------------------------------------
+* Updated NotificationReceiver, Notifier
+* Updated NotificationIQ, NotificationIQProvider
+* Updated NotificationDetailsActivity
+* Added NotificationSettingsActivity
+
+Changes in version 0.4.1 (2010-10-05)
+-------------------------------------
+* Updated NotificationService, NotificationReceiver
+* Updated ServiceManager, XmppManager
+* Renamed PhoneStateReceiver to ConnectivityReceiver
+
+Changes in version 0.4.0 (2010-09-29)
+-------------------------------------
+* Added Register/Unregister PhoneStateReceiver
+* Refactored package and class names
+* Updated asmack.jar file
+
+Changes in version 0.3.2 (2010-09-17)
+-------------------------------------
+* Updated NotificationDetailsActivity
+* Added LogUtil
+
+Changes in version 0.3.1 (2010-09-10)
+-------------------------------------
+* Updated ServiceManager
+* Changed the copyright statement
+
+Changes in version 0.3.0 (2010-09-03)
+-------------------------------------
+* Updated NotificationDetailsActivity
+* Updated ServiceManager
+* Added properties configuration
+
+Changes in version 0.2.1 (2010-08-12)
+-------------------------------------
+* Updated MainService, MainReceiver
+* Updated XmppManager, PacketListener
+
+Changes in version 0.2.0 (2010-08-09)
+-------------------------------------
+* Updated XmppManager, NotificationPacketListener
+* Updated XmppNotification, NotificationProvider
+* Refactored IQ extention classes
+
+Changes in version 0.1.2 (2010-07-02)
+-------------------------------------
+* Added NotificationDetailsActivity
+* Updated MainReceiver
+* Updated NotificationPacketListener 
+
+Changes in version 0.1.1 (2010-06-30)
+-------------------------------------
+* Added SdkPhoneStateListener, SdkPhoneStateReceiver
+* Added PersistentConnectionListener
+* Added Reconnection thread
+* Added InvalidFormatException
+* Updated MainService, ServiceManager
+* Updated XmppManager, PacketListener
+
+Changes in version 0.1.0 (2010-05-30)
+-------------------------------------
+* Added asmack(smack/smackx) library
+* Added MainService, ServiceManager
+* Added XmppManager, IQ Extensions, PacketListener, PacketProvider
+* Added Notifier, BroadcastReceiver
+* Updated AndroidManifest.xml
+
+Changes in version 0.0.1 (2010-04-30)
+-------------------------------------
+* Created the basic android app project
+* Initial alpha version

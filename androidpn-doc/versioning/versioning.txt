@@ -1,0 +1,29 @@
+Version Numbering Scheme
+
+The version number of the project has the following form:
+
+<major>.<minor>.<micro>[-M<milestone number> or -RC<release candidate number>] 
+
+This scheme has three number components:
+
+- The major number increases when there are incompatible changes in the API. 
+- The minor number increases when a new feature is introduced. 
+- The micro number increases when a bug or a trivial change is made. 
+
+and an optional label that indicates the maturity of a release:
+
+- M (Milestone) means the feature set can change at any time in the next
+  milestone releases. The last milestone release becomes the first release
+  candidate after a vote.
+- RC (Release Candidate) means the feature set is frozen and the next RC
+  releases will focus on fixing problems unless there is a serious flaw in
+  design. The last release candidate becomes the first GA release after a vote.
+- No label implies GA (General Availability), which means the release is stable
+  enough and therefore ready for production environment. 
+
+Here's an example that illustrates how the version number increases:
+
+2.0.0-M1 -> 2.0.0-M3 -> 2.0.0-M3 -> 2.0.0-M4 - 2.0.0-RC1 -> 2.0.0-RC2
+-> 2.0.0-RC3 - 2.0.0 -> 2.0.1 -> 2.0.2 -> 2.1.0-M1 ... 
+
+Please note that we always specify the micro number, even if it's zero.
